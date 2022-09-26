@@ -84,13 +84,9 @@ public class tester {
     }
     
     public void testTryKeyLength() {
-        //FileResource fr = new FileResource("VigenereTestData/athens_keyflute.txt");
         FileResource fr = new FileResource();
-        //String encrypted = "JPYXIJPY";
         VigenereBreaker vb = new VigenereBreaker();
-        //int[] key = vb.tryKeyLength(fr.asString(), 5, 'e');
         int[] key = vb.tryKeyLength(fr.asString(), 3, 'e');
-        //int[] key = vb.tryKeyLength(encrypted, 5, 'e');
         System.out.println(Arrays.toString(key));
     }
     
@@ -117,22 +113,20 @@ public class tester {
         HashSet dictionary = vb.readDictionary(fr);
         FileResource fr2 = new FileResource("messages/secretmessage2.txt");
         String massege = fr2.asString();
-        // System.out.println(massege);
         String decrypted = vb.breakForLanguage(massege, dictionary);
         System.out.println(decrypted);
     }
     
     public void testReadDictionary2() {
         VigenereBreaker vb = new VigenereBreaker();
-        //FileResource fr = new FileResource("dictionaries/test");
         FileResource fr = new FileResource("dictionaries/English");
         HashSet<String> dictionary = vb.readDictionary(fr);
         System.out.println(dictionary);
         System.out.println(dictionary.size());
         
-        /*ArrayList<String> dictionary2 = vb.readDictionary2(fr);
+        ArrayList<String> dictionary2 = vb.readDictionary2(fr);
         System.out.println(dictionary2);
-        System.out.println(dictionary2.size());*/
+        System.out.println(dictionary2.size());
         
     }
     
@@ -143,71 +137,7 @@ public class tester {
         System.out.println(dictionary.size());
         char mostCommon = vb.mostCommonCharIn(dictionary);
         System.out.println("Most common char in this dictionary is " + mostCommon);
-        /*char mostCommon2 = vb.mostCommonCharIn2(dictionary);
-        System.out.println("Most common char2 in this dictionary is " + mostCommon2);*/
+        char mostCommon2 = vb.mostCommonCharIn2(dictionary);
+        System.out.println("Most common char2 in this dictionary is " + mostCommon2);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
