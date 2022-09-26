@@ -15,7 +15,7 @@ public class VigenereCipher {
         StringBuilder answer = new StringBuilder();
         int i = 0;
         for (char c : input.toCharArray()) {
-            int cipherIndex = i % ciphers.length;        // удобное решение - используем key по кругу по всей строке
+            int cipherIndex = i % ciphers.length;
             CaesarCipher thisCipher = ciphers[cipherIndex];
             answer.append(thisCipher.encryptLetter(c));
             i++;
