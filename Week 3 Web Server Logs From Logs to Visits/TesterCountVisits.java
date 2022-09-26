@@ -2,7 +2,7 @@ import java.util.*;
 public class TesterCountVisits {
     public void testCountVisitsPerIP() {
         LogAnalyzer la = new LogAnalyzer();
-        la.readFile("weblog2_log");
+        la.readFile("data/weblog2_log");
         HashMap<String, Integer> counts = la.countVisitsPerIP();
         System.out.println(counts);
         int maxVisits = la.mostNumberVisitsByIP(counts);
@@ -13,7 +13,7 @@ public class TesterCountVisits {
     
     public void testIPsForDays() {
         LogAnalyzer la = new LogAnalyzer();
-        la.readFile("weblog2_log");
+        la.readFile("data/weblog2_log");
         HashMap<String, ArrayList<String>> iPsForDays = la.iPsForDays();
         System.out.println(iPsForDays);
         for(String day : iPsForDays.keySet()) {
