@@ -64,7 +64,7 @@ public class CaesarBackup {
     }
     
     public void testEncrypt() {
-        /*
+        
         System.out.println(encrypt("FIRST LEGION ATTACK EAST FLANK!", 23)); // CFOPQ IBDFLK XQQXZH BXPQ CIXKH!
                 
         FileResource fr = new FileResource();
@@ -76,7 +76,6 @@ public class CaesarBackup {
         System.out.println(encryptAll("First Legion", 17)); // Wzijk Cvxzfe
         
         System.out.println(encryptTwoKeys("First Legion", 23, 17)); // Czojq Ivdzle
-        */
        
         System.out.println(encryptAll("At noon be in the conference room with your hat on for a surprise party. YELL LOUD!", 15));
         System.out.println(encryptTwoKeys("At noon be in the conference room with your hat on for a surprise party. YELL LOUD!", 8, 21));
