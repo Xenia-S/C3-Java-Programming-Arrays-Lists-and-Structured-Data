@@ -145,7 +145,4 @@ public class GladLibMap {
         System.out.println("Total number of words that were used: " + totalWordsConsidered());
         System.out.println("Total number of words that were possible to pick from: " + totalWordsInMap());
     }
-    
-
-
 }
