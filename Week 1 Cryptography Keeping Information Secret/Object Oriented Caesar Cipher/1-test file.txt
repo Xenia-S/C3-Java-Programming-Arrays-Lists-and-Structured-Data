@@ -1,0 +1,3 @@
+I HAVE A GOOD TIME CODING Some new great eeeeeeeeeeeee! 
+
+In this assignment, you will put together the CaesarCipherTwo class that encrypts a message with two keys (the same way as the previous lesson: key1 is used to encrypt every other letter, starting with the first, and key2 is used to encrypt every other letter, starting with the second), and also decrypts the same message. In addition you will create a second class, TestCaesarCipherTwo to test examples that use the CaesarCipherTwo class, including writing a method that will automatically decrypt an encrypted file by determining the two keys that were used to encrypt it.
