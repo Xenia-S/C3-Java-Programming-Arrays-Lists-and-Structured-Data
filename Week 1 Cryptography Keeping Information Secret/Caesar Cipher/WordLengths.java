@@ -52,9 +52,7 @@ public class WordLengths {
     }
     
     public void test_WordLengths() {
-        //FileResource fr = new FileResource("1-test file.txt");
-        //FileResource fr = new FileResource("smallHamlet.txt");
-        FileResource fr = new FileResource("2-test file.txt");
+        FileResource fr = new FileResource("data/2-test file.txt");
         int[] wordLength = new int[12];
         wordLength = WordLengths(fr, wordLength);
         printWordLengthArray(wordLength);
@@ -64,7 +62,7 @@ public class WordLengths {
     }
     
     public void test2() {
-        FileResource fr = new FileResource("manywords.txt");
+        FileResource fr = new FileResource("data/manywords.txt");
         int[] wordLength = new int[12];
         wordLength = WordLengths(fr, wordLength);
         printWordLengthArray(wordLength);
