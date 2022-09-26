@@ -22,7 +22,6 @@ public class VigenereBreaker {
         }
         int maxIndex = cc.maxIndex(countLetters);
         char mostCommon = "abcdefghijklmnopqrstuvwxyz".charAt(maxIndex);
-        //System.out.print(Arrays.toString(countLetters));
         return mostCommon;
     }
     
@@ -141,8 +140,6 @@ public class VigenereBreaker {
             if(currRealWords > maxRealWords) {
                 maxRealWords = currRealWords;
                 answer = decrypted;
-                //System.out.println("Key is " + i);
-                //System.out.println("There are " + currRealWords + " real words");
             }
         }
         return answer;
@@ -166,50 +163,3 @@ public class VigenereBreaker {
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
