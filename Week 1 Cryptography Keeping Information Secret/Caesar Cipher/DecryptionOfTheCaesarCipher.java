@@ -138,8 +138,5 @@ public class DecryptionOfTheCaesarCipher {
         for(int i=0; i<test.length; i++){
             System.out.println(alphabet.charAt(i) + "\t" + test[i]);
         }
-        
-        
-        
      }
 }
