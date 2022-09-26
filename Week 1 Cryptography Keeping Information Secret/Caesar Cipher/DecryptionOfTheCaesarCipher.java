@@ -4,7 +4,6 @@ import java.io.*;
 public class DecryptionOfTheCaesarCipher {
     public int[] countLetters(String message) {
         int[] count = new int[26];
-        //                 01234567890123456789012345
         String alphabet = "abcdefghijklmnopqrstuvwxyz";
         for(int i=0; i<message.length(); i++) {
             char letter = message.charAt(i);
@@ -110,23 +109,21 @@ public class DecryptionOfTheCaesarCipher {
     }
     
     public void test_decryptTwoKeys() {
-        //String message = "Just a test string with lots of eeeeeeeeeeeeeeeees";
-        //                01234567890123456789012345678901234567890123456789
         String message = "Gwpv c vbuq pvokki yfve iqqu qc bgbgbgbgbgbgbgbgbu";
         String decrypted = decryptTwoKeys(message);
         System.out.println(decrypted);
     }
     
     public void test() {
-        /*String a = "AaABbC ffffffffffff  d";
+        String a = "AaABbC ffffffffffff  d";
         String alphabet = "abcdefghijklmnopqrstuvwxyz";
         int[] test = countLetters(a);
         for(int i=0; i<test.length; i++){
             System.out.println(alphabet.charAt(i) + "\t" + test[i]);
-        }*/
+        }
         
-        /*int key = findKey(test);
-        System.out.println(key);*/
+        int key = findKey(test);
+        System.out.println(key);
         
         String message = "Urna queeeeeis, diceeeetumst. Haeeeeec consectetur cras leo, et. Mollis dui ultricies. Est.eeeeeee Eget dapibus in veeeeeenenatis leo, pleeeeeeeatea lorem ultricies. Justo sed cras tortor, ipsum habitasse eleifend et. Mattis tempus sapien dictumst. In vitae lorem eget sit non sodales sed quam, quis, mollis nec in urna ornare platea nisi ex.";
         String encrypted = encrypt(message, 5);
@@ -138,9 +135,9 @@ public class DecryptionOfTheCaesarCipher {
         String alphabet = "abcdefghijklmnopqrstuvwxyz";
         int[] test = countLetters(encrypt(message, 5));
         System.out.println(findKey(test));
-        /*for(int i=0; i<test.length; i++){
+        for(int i=0; i<test.length; i++){
             System.out.println(alphabet.charAt(i) + "\t" + test[i]);
-        }*/
+        }
         
         
         
