@@ -1,11 +1,3 @@
-
-/**
- * Write a description of class LogRecord here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-
 import  java.util.*;
 public class LogEntry
 {
@@ -21,7 +13,6 @@ public class LogEntry
        request = req;
        statusCode = status;
        bytesReturned = bytes;
-       
    }
    
    public String getIpAddress() {
