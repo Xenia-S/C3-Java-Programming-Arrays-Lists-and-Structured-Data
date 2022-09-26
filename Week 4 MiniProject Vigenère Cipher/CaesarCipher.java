@@ -7,7 +7,6 @@ public class CaesarCipher {
     
     public CaesarCipher(int key) {
         theKey = key;
-        //          01234567890123456789012345
         alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         shiftedAlphabet = alphabet.substring(key) + alphabet.substring(0,key);
         alphabet = alphabet + alphabet.toLowerCase();
