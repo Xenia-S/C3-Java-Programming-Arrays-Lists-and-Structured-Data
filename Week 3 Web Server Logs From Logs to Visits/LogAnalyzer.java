@@ -1,11 +1,3 @@
-
-/**
- * Write a description of class LogAnalyzer here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-
 import java.util.*;
 import edu.duke.*;
 
@@ -43,7 +35,7 @@ public class LogAnalyzer
             return uniqueIps.size();
         }
      
-        public void printAllHigherThanNum(int num) { // print those LogEntrys that have a status code greater than num
+        public void printAllHigherThanNum(int num) {
             for(LogEntry le : records) {
                 int currStatus = le.getStatusCode();
                 if (currStatus > num) {
