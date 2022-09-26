@@ -1,10 +1,4 @@
 
-/**
- * Count common words in Shakespeare's works
- * 
- * @author Duke Software Team
- * @version 1.0
- */
 import edu.duke.*;
 
 public class CommonWords
@@ -40,7 +34,6 @@ public class CommonWords
     }
     void countShakespeare(){
         String[] plays = {"caesar.txt", "errors.txt", "hamlet.txt", "likeit.txt", "macbeth.txt", "romeo.txt"};
-        //String[] plays = {"small.txt"};
         String[] common = getCommon();
         int[] counts = new int[common.length];
         for(int k=0; k < plays.length; k++){
